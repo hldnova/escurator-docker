@@ -13,8 +13,8 @@ RUN apt update && \
 
 
 WORKDIR /curator
-COPY curator.yml /curator/
-COPY action.yml /curator/
+COPY curator.yml /curator/config/
+COPY action.yml /curator/config/
 COPY supervisord-curator.conf /etc/supervisor.d/
 COPY entrypoint.sh /curator/entrypoint.sh
 
