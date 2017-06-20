@@ -7,7 +7,7 @@ ENV ES_CURATOR_VERSION=5.0.4
 
 RUN apt update && \
     pip install -U elasticsearch-curator==${ES_CURATOR_VERSION} && \
-    mkdir -p /curator && \
+    mkdir -p /curator/logs && \
 # Clean up.
     rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf ~/.cache 
 
